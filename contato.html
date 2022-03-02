@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1><img src="logo.png"></h1>
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
                 <nav>
                     <ul>    
                         <li><a href="index.html">Home</a></li>
@@ -22,19 +22,19 @@
         <main>
             <form>
                 <label for="nomeCompleto">Nome Completo</label>
-                <input type="text" id="nomeCompleto" class="input-padrao">
+                <input type="text" id="nomeCompleto" class="input-padrao" required>
 
                 <label for="email">Email</label>
-                <input type="text" id="email" class="input-padrao">
+                <input type="text" id="email" class="input-padrao"required placeholder="seuemail@email.com.br">
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" class="input-padrao">
+                <input type="text" id="telefone" class="input-padrao"required placeholder="(XX) X XXXX-XXXX">
                 
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="90" rows="10" id="mensagem" class="input-padrao"></textarea>
+                <textarea cols="90" rows="10" id="mensagem" class="input-padrao"required></textarea>
                 
-                <div>
-                    <p>Como prefere o nosso contato?</p>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
                     <label for="radio-email"><input type="radio" name="contato" 
                         value="email"id="radio-email">Email</label>
                     
@@ -42,24 +42,63 @@
                         value="telefone"id="radio-telefone">Telefone</label>
                     
                     <label for="radio-whatsapp"><input type="radio" name="contato" 
-                        value="whatsapp"id="radio-whatsapp">WhatsApp</label>
-                </div>
-                <div>
-                    <p>Selecione o melhor horário de atendiento.</p>
+                        value="whatsapp"id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Selecione o melhor horário de atendiento.</legend>
                     <select>
                         <option>Manhã</option>
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                </div>
+                </fieldset>
                 
-                <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+                <label class="checkbox"><input type="checkbox"checked> Gostaria de receber nossas novidades por e-mail?</label>
                 
-                <input type="submit" value="Enviar formulário">
+                <input type="submit" value="Enviar formulário" class="enviar">
+
             </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias da Semana</th>
+                        <th>Horário de Funcionamento</th>
+                    </tr>
+                </thead>
+                <body>
+                    <tr>
+                        <td>Segunda-Feira</td>
+                        <td>Fechado.</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-Feira</td>
+                        <td>9 Horas às 20 Horas.</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-Feira</td>
+                        <td>9 Horas às 20 Horas.</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta-Feira</td>
+                        <td>9 Horas às 20 Horas.</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-Feira</td>
+                        <td>9 Horas às 20 Horas.</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>10 Horas às 16 Horas.</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>10 Horas às 16 Horas.</td>
+                    </tr>
+                </body>
+            </table>
         </main>
         <footer>
-            <img src="logo-branco.png">
+            <img src="logo-branco.png" alt="Logo da Barbearia Alura">
             <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
         </footer>
     </body>
